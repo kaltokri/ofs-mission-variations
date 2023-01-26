@@ -1,0 +1,58 @@
+{
+    "variableForMetar": "METAR",
+    "position": 
+      {
+        "lat": 42.355691,
+        "lon": 43.323853,
+        "tz": "Asia/Tbilisi"
+      },
+    "moments": 
+      {
+        "night" : "23:30",
+        "beforedawn" : "sunrise-90*60",
+        "dawn" : "sunrise-15*60",
+        "morning" : "sunrise+45*60",
+        "day" : "15:00",
+        "beforesunset" : "sunset-90*60",
+        "sunset" : "sunset+15*60"
+      },
+    "targets": [
+      {
+        "version": "night",
+        "weatherfile": "conf-var-vfr.lua",
+        "moment": "night",
+        "dontSetToday": true
+      },
+      {
+        "version": "wind10",
+        "weatherfile": "conf-var-wind10.lua",
+        "moment": "day",
+        "dontSetToday": true
+      },
+      {
+        "version": "wind15",
+        "weatherfile": "conf-var-wind15.lua",
+        "moment": "day",
+        "dontSetToday": true
+      },
+      {
+        "version": "wind20",
+        "weatherfile": "conf-var-wind20.lua",
+        "moment": "day",
+        "dontSetToday": true
+      },
+      {
+        "version": "kites",
+        "weatherfile": "conf-var-wind97.lua",
+        "moment": "day",
+        "dontSetToday": true
+      },
+      {
+        "version": "ifr",
+        "weatherfile": "conf-var-ifr.lua",
+        "moment": "day",
+        "dontSetToday": true
+      }
+    ]
+  }
+  
